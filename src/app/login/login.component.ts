@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router, ActivatedRoute,Params} from '@angular/router';
+import { Route } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(
+    private _route:ActivatedRoute,
+    private _router:Router
+  ) { 
+    
   }
 
+  ngOnInit(): void {
+
+  }
+
+  redirigirOlvideContrasena(){
+    return this._router.navigate(['/olvide-contrasena']);
+  }
 }
