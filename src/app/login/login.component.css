@@ -85,7 +85,7 @@ form input[type="submit"]{
     outline:none;
 }
 
-form input[type="submit"]:hover{
+form input[type=submit]:hover{
     box-shadow: 0 0 5px 0 #EA792D;
 }
 
