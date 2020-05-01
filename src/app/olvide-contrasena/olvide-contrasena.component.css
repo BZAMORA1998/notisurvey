@@ -1,34 +1,40 @@
 .principal{
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .box{
-    width: 40%;
-    margin-left:30%;
+    width: 30%;
+    margin:100px auto; 
+    width:350px;
     text-align: center;
+    padding: 15px;
 }
 
-.form-olvide{
-    width: 350px;
-    height: 500px;
-    margin:60px auto;  
-    padding-top: 150px;
-    padding: 5px;
-    
+#olvide{
+    font-size: 30px;
+    font-size: 25px;
+    color:#EA792D;  
+}
+
+#intro{
+    margin-top: 20px;
+    color: #757E7F;
 }
 
 label{
     margin-top: 20px;
     display: block;
     text-align: left;
+    color: #757E7F;
 }
 
 form input[type=text]{
     margin-top: 20px;
     width: 100%;
     height: 40px;
-    border: 1px solid #ea792d;
+    border: 1px solid #EA792D;
     border-radius: 4px;
     margin: 8px 0;
     outline: none;
@@ -41,39 +47,32 @@ form input[type="submit"]{
     margin-top: 20px;
     height: 40px;
     width: 100%;
-    border: 1px solid #ea792d;
+    background-color:#EA8947;
+    border: 2px solid #EA792D;
     border-radius: 4px;
-    background-color: #ea792d;
     color: white;
+    outline: none;
     box-sizing: border-box;
     border-color: .15s;
 }
 
 form input[type=text]:click{
-    border-color: #ea792d;
-    box-shadow: 0 0 5px 0 #ea792d;
+    box-shadow: 0 0 5px 0 #EA792D;
+}
+
+form input[type="submit"]:hover{
+    box-shadow: 0 0 5px 0 #EA792D;
 }
 
 form input[type=text]:focus{
-    border-color: #ea792d;
-    box-shadow: 0 0 5px 0 #ea792d;
+    box-shadow: 0 0 5px 0 #EA792D;
 }
 
 form input[type=password]:focus{
-    border-color: #ea792d;
-    box-shadow: 0 0 5px 0 #ea792d;
+    box-shadow: 0 0 5px 0 #EA792D;
 }
 
 img{
     height: 100px;
     margin-left: 25px;
-}
-#h1-olvide{
-    margin-top: 20px;
-    color:#ea792d;
-}
-
-#p-inicio{
-    margin-top: 20px;
-    color: #999999;
 }

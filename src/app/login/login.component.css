@@ -1,6 +1,7 @@
 .principal{
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .box-left{
@@ -25,29 +26,33 @@
 
 .form-login{
     width: 350px;
-    height: 520px;
+    height: 530px;
     margin:60px auto;  
     padding-top: 150px;
     padding: 15px;
 }
 
 .form-login label{
+    color: #757E7F;
     margin-top: 20px;
     display: block;
 }
 
-.form-login #h1-bienvenido{
-    color: #999999;
+.form-login #bienvenido{
+    font-size: 30px;
+    color: #757E7F;
 }
 
-.form-login #h1-inicio{
-    color:#ea792d;
+.form-login #inicio{
+    font-size: 25px;
+    color:#EA792D;
 }
+
 
 form input[type=text]{
     width: 100%;
     height: 40px;
-    border: 1px solid #ea792d;
+    border: 1px solid #EA792D;
     border-radius: 4px;
     margin: 8px 0;
     outline: none;
@@ -58,7 +63,7 @@ form input[type=text]{
 form input[type=password]{
     width: 100%;
     height: 40px;
-    border: 1px solid #ea792d;
+    border: 1px solid #EA792D;
     border-radius: 4px;
     margin: 8px 0;
     outline: none;
@@ -71,34 +76,36 @@ form input[type="submit"]{
     margin-top: 20px;
     height: 40px;
     width: 100%;
-    border: 1px solid #ea792d;
     border-radius: 4px;
-    background-color: #ea792d;
-    color: white;
+    background-color:#EA8947;
+     border: 2px solid #EA792D;
+    color:  white;
     box-sizing: border-box;
     border-color: .15s;
+    outline:none;
+}
+
+form input[type="submit"]:hover{
+    box-shadow: 0 0 5px 0 #EA792D;
 }
 
 form input[type=text]:click{
-    border-color: #ea792d;
-    box-shadow: 0 0 5px 0 #ea792d;
+    box-shadow: 0 0 5px 0 #EA792D;
 }
 
 form input[type=text]:focus{
-    border-color: #ea792d;
     box-shadow: 0 0 5px 0 #ea792d;
     padding-left: 20px;
 }
 
 form input[type=password]:focus{
-    border-color: #ea792d;
     box-shadow: 0 0 5px 0 #ea792d;
     padding-left: 20px;
 }
 
 a{
     display: block;
-    color: black;
+    color: 868E91;
     text-decoration:none;
     margin-left: 100px;
     margin-top: 40px;
@@ -111,7 +118,7 @@ img{
 
 #show-hide-passwd{
     position: absolute;
-    margin-top: 453px;
+    margin-top: 422px;
     margin-left: 290px;
     border: none;
     background-color: transparent;

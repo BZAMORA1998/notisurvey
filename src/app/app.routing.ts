@@ -4,12 +4,14 @@ import { Routes , RouterModule} from  '@angular/router';
 //importar comppnente
 import {LoginComponent} from './login/login.component';
 import {OlvideContrasenaComponent} from './olvide-contrasena/olvide-contrasena.component';
+import {PrincipalComponent} from './principal/principal.component';
 import { Route } from '@angular/compiler/src/core';
 
 const appRoutes:Routes=[
     { path: '',component:LoginComponent},
     { path: 'login',component:LoginComponent},
     { path: 'olvide-contrasena',component:OlvideContrasenaComponent},
+    { path: 'principal',component:PrincipalComponent},
     { path: '**',component:LoginComponent}
 ];
 

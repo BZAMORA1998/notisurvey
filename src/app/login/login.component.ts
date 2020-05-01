@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   }
 
-  redirigirOlvideContrasena(){
-    return this._router.navigate(['/olvide-contrasena']);
+  redidirigirPrincipal(){
+    return this._router.navigate(['/principal']);
   }
 }

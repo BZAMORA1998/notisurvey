@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OlvideContrasenaComponent } from './olvide-contrasena.component';
+import { PrincipalComponent } from './principal.component';
 
-describe('OlvideContrasenaComponent', () => {
-  let component: OlvideContrasenaComponent;
-  let fixture: ComponentFixture<OlvideContrasenaComponent>;
+describe('PrincipalComponent', () => {
+  let component: PrincipalComponent;
+  let fixture: ComponentFixture<PrincipalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OlvideContrasenaComponent ]
+      declarations: [ PrincipalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OlvideContrasenaComponent);
+    fixture = TestBed.createComponent(PrincipalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
