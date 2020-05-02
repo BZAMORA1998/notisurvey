@@ -1,0 +1,56 @@
+.principal{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+#box-acordeon{
+    width: 84%;
+    margin-left: 8%;
+    outline: none;
+}
+
+#box-acordeon #acordeon h3{
+    outline: none;
+    border: none;
+    height: 45px;
+    padding-top: 15px; 
+}
+
+h1{
+    color: #4f5456;
+    font-size: 16px;
+    margin-left: 8%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-left: 3%;
+    width: 50%;
+    text-decoration:none;
+}
+
+.ui-accordion .ui-accordion-header{
+    margin: 10px 0 0 0;
+}
+
+.ui-icon, .ui-widget-content .ui-icon{
+    float: right;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #ea792d !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    color: white;
+    background: #b8b8b8;
+}
+.ui-state-hover,.ui-state-hover,.ui-widget-header
+.ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus,
+.ui-button:hover, .ui-button:focus{
+    background: #b8b8b8a1;
+}
+
+
+
+
