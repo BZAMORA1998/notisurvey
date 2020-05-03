@@ -7,9 +7,11 @@
             <p id="inicio">Iniciar Sesión</p>
             <form #formLogin="ngForm" (ngSubmit)="autenticacion()" class="form">
                 <label>Usuario o Correo Electrónico</label>
-                <input type="text" name="usuario"  #usuario="ngModel" [(ngModel)]="user" autofocus/>
+                <input type="text" name="usuario"  #usuario="ngModel" [(ngModel)]="user" autofocus required/>
+                <br><span class="validacion"  *ngIf="usuario.touched && !usuario.valid"> Debe ingresar un usuario</span>
                 <label>Constraseña</label>
-                <input type="password" name="contrasena" #contrasena="ngModel" [(ngModel)]="password"/>
+                <input type="password" name="contrasena" #contrasena="ngModel" [(ngModel)]="password" required/>
+                <br><span class="validacion" *ngIf="contrasena.touched && !contrasena.valid">Debe ingresar una contraseña</span>
                 <span id="show-hide-passwd" action="hide" class="input-group-addon glyphicon glyphicon glyphicon-eye-open"></span>
                 <input type="submit" value="Continuar"/>
             </form>

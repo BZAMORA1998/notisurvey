@@ -3,7 +3,8 @@ import {Router, ActivatedRoute,Params} from '@angular/router';
 import { Route } from '@angular/compiler/src/core';
 import { LoginService } from '../servicios/login.servicio';
 import { Usuario } from '../models/login/usuario';
-import { from } from 'rxjs';
+import { from, ArgumentOutOfRangeError } from 'rxjs';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -33,6 +34,15 @@ export class LoginComponent implements OnInit {
     return this._router.navigate(['/principal']);
   }
 
+  showModal(message){
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: message,
+      confirmButtonColor:'#ea792d',
+    })
+  }
+
   autenticacion(){
     console.log("usuario: "+this.user+"contrasena: "+this.password);
     this._loginService.getAutenticacion(this.user,this.password).subscribe(
@@ -45,6 +55,7 @@ export class LoginComponent implements OnInit {
           this.redidirigirPrincipal()
         }else{
           console.log(result.respuestaProceso);
+          this.showModal(result.respuestaProceso.mensaje);
         }
       },
       error=>{

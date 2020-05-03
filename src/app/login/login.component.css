@@ -78,11 +78,12 @@ form input[type="submit"]{
     width: 100%;
     border-radius: 4px;
     background-color:#EA8947;
-     border: 2px solid #EA792D;
+    border: 2px solid #EA792D;
     color:  white;
     box-sizing: border-box;
     border-color: .15s;
     outline:none;
+    margin-top: 30px;
 }
 
 form input[type=submit]:hover{
@@ -124,3 +125,15 @@ img{
     background-color: transparent;
 }
 
+#swal2-shown .swal2-height-auto {
+    box-shadow: none !important;
+}
+
+.validacion{
+    position: absolute;
+    color: red;
+    font-size: small;
+    width: 14%;
+    margin-left: 130px;
+    text-align: right;
+}
