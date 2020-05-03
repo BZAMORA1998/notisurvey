@@ -1,15 +1,15 @@
 
 <div class="principal">
     <div class="box-left">
-        <div class="form-login" (submit)="redidirigirPrincipal()">
+        <div class="form-login">
             <img class="img-login" src="../../assets/img/logo-notisurvey.png">
             <p id="bienvenido">¡Bienvenido!</p>
             <p id="inicio">Iniciar Sesión</p>
-            <form class="form">
+            <form #formLogin="ngForm" (ngSubmit)="autenticacion()" class="form">
                 <label>Usuario o Correo Electrónico</label>
-                <input type="text" name="usuario" autofocus/>
+                <input type="text" name="usuario"  #usuario="ngModel" [(ngModel)]="user" autofocus/>
                 <label>Constraseña</label>
-                <input type="password" name="contrasena" />
+                <input type="password" name="contrasena" #contrasena="ngModel" [(ngModel)]="password"/>
                 <span id="show-hide-passwd" action="hide" class="input-group-addon glyphicon glyphicon glyphicon-eye-open"></span>
                 <input type="submit" value="Continuar"/>
             </form>

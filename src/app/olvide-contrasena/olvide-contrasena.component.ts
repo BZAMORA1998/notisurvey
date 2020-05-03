@@ -10,6 +10,10 @@ export class OlvideContrasenaComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
+  refresh(): void {
+    window.location.reload();
+  }
 }

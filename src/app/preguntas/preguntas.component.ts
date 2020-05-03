@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreguntasComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
+    
+  }
+
+  refresh(): void {
+    window.location.reload();
   }
 
 }
