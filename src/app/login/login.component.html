@@ -11,8 +11,8 @@
                 <br><span class="validacion"  *ngIf="usuario.touched && !usuario.valid"> Debe ingresar un usuario</span>
                 <label>Constraseña</label>
                 <input type="password" name="contrasena" #contrasena="ngModel" [(ngModel)]="password" required/>
-                <br><span class="validacion" *ngIf="contrasena.touched && !contrasena.valid">Debe ingresar una contraseña</span>
                 <span id="show-hide-passwd" action="hide" class="input-group-addon glyphicon glyphicon glyphicon-eye-open"></span>
+                <br><span class="validacion" *ngIf="contrasena.touched && !contrasena.valid">Debe ingresar una contraseña</span>
                 <input type="submit" value="Continuar"/>
             </form>
             <a [routerLink]="['/olvide-contrasena']">Olvide mi usuario y/o contraseña</a>
