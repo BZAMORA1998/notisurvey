@@ -11,14 +11,4 @@ export class OlvideContrasenaComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-  
-  ngOnDestroy():void {
-
-  }
-
-  refresh(): void {
-
-  
-  }
 }

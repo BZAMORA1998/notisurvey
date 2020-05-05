@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="#">Diseño de la Encuesta</a></li>
                 <li><a href="#">Secciones</a></li>
-                <li><a [routerLink]="['/preguntas']" [routerLinkActive]="['active']">Preguntas</a></li>
+                <li><a (click)="refresh()" [routerLink]="['/preguntas']" [routerLinkActive]="['active']">Preguntas</a></li>
                 <li href="#" class="ultimo"><a>Resultado final</a></li>
                 <li href="#" class="ultimo"><input type="submit" value="Guardar"></li>
             </ul>

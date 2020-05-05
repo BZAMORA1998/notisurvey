@@ -17,7 +17,9 @@ export class PrincipalComponent implements OnInit {
     console.log(this.usuario);
   }
 
-  refresh(): void {
-    location.reload(); 
+  refresh():void{
+    setTimeout(()=>{
+      window.location.reload();
+    }, 100);
   }
 }

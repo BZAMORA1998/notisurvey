@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Router, ActivatedRoute,Params} from '@angular/router';
-import { Route } from '@angular/compiler/src/core';
+import {Router, ActivatedRoute} from '@angular/router';
 import { LoginService } from '../servicios/login.servicio';
 import { Usuario } from '../models/login/usuario';
-import { from, ArgumentOutOfRangeError } from 'rxjs';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -32,6 +30,12 @@ export class LoginComponent implements OnInit {
 
   redidirigirPrincipal(){
     return this._router.navigate(['/principal']);
+  }
+
+  refresh():void{
+    setTimeout(()=>{
+      window.location.reload();
+    }, 100);
   }
 
   showModal(message){
