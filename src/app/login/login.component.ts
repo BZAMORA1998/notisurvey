@@ -15,7 +15,7 @@ import Swal from 'sweetalert2';
 export class LoginComponent implements OnInit {
 
    public usuario:Usuario;
-   public user:String;
+   public nick:String;
    public password:String;
 
   constructor(
@@ -44,18 +44,17 @@ export class LoginComponent implements OnInit {
   }
 
   autenticacion(){
-    console.log("usuario: "+this.user+"contrasena: "+this.password);
-    this._loginService.getAutenticacion(this.user,this.password).subscribe(
-      result=>{
-        if(result.respuestaProceso.codigo==0){
-          this.usuario=result.usuario;
+    this._loginService.getAutenticacion(this.nick,this.password).subscribe(
+      Response=>{
+        if(Response.respuestaProceso.codigo==200){
+          this.usuario=Response.usuario;
           localStorage.clear();
           localStorage.setItem("usuario",JSON.stringify(this.usuario));
           console.log(this.usuario);
           this.redidirigirPrincipal()
         }else{
-          console.log(result.respuestaProceso);
-          this.showModal(result.respuestaProceso.mensaje);
+          console.log(Response.respuestaProceso);
+          this.showModal(Response.respuestaProceso.mensaje);
         }
       },
       error=>{

@@ -6,14 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./olvide-contrasena.component.css']
 })
 export class OlvideContrasenaComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
-    
+
+  }
+
+  
+  ngOnDestroy():void {
+
   }
 
   refresh(): void {
-    window.location.reload();
+
+  
   }
 }

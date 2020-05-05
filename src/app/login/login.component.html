@@ -7,7 +7,7 @@
             <p id="inicio">Iniciar Sesión</p>
             <form #formLogin="ngForm" (ngSubmit)="autenticacion()" class="form">
                 <label>Usuario o Correo Electrónico</label>
-                <input type="text" name="usuario"  #usuario="ngModel" [(ngModel)]="user" autofocus required/>
+                <input type="text" name="usuario"  #usuario="ngModel" [(ngModel)]="nick" autofocus required/>
                 <br><span class="validacion"  *ngIf="usuario.touched && !usuario.valid"> Debe ingresar un usuario</span>
                 <label>Constraseña</label>
                 <input type="password" name="contrasena" #contrasena="ngModel" [(ngModel)]="password" required/>
