@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { OlvideContrasenaComponent } from './olvide-contrasena/olvide-contrasena.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
+import { DisenoEncuestaComponent } from './diseno-encuesta/diseno-encuesta.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PreguntasComponent } from './preguntas/preguntas.component';
     LoginComponent,
     OlvideContrasenaComponent,
     PrincipalComponent,
-    PreguntasComponent
+    PreguntasComponent,
+    DisenoEncuestaComponent
   ],
   imports: [
     BrowserModule,
