@@ -47,7 +47,18 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  mostrarModal(){
+    var modal=document.getElementById("modelo");
+    modal.style.display="block";
+  }
+
+  ocultarModal(){
+    var modal=document.getElementById("modelo");
+    modal.style.display="none";
+  }
+
   autenticacion(){
+    this.mostrarModal();
     this._loginService.getAutenticacion(this.nick,this.password).subscribe(
       Response=>{
         if(Response.respuestaProceso.codigo==200){
@@ -55,9 +66,11 @@ export class LoginComponent implements OnInit {
           localStorage.clear();
           localStorage.setItem("usuario",JSON.stringify(this.usuario));
           console.log(this.usuario);
+          this.ocultarModal();
           this.redidirigirPrincipal()
         }else{
           console.log(Response.respuestaProceso);
+          this.ocultarModal();
           this.showModal(Response.respuestaProceso.mensaje);
         }
       },

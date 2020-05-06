@@ -137,3 +137,32 @@ img{
     margin-left: 130px;
     text-align: right;
 }
+
+#modelo{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+}
+
+#modelo #cuerpo{
+    border-radius: 5px;
+    background-color: white;
+    margin: 23% auto;
+    padding: 10px;
+    width: 20%;
+}
+
+#texto{
+    font-size: 15px;
+    margin: 5px;
+    float: left;
+}
+
+.spinner-border{
+    padding: 0px;
+    margin-left: 15px;
+    text-align: center;
+    margin: 5px;
+}
