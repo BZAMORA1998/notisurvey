@@ -7,7 +7,7 @@ import {OlvideContrasenaComponent} from './olvide-contrasena/olvide-contrasena.c
 import {PrincipalComponent} from './principal/principal.component';
 import {PreguntasComponent} from './preguntas/preguntas.component';
 import {DisenoEncuestaComponent} from './diseno-encuesta/diseno-encuesta.component';
-import { Route } from '@angular/compiler/src/core';
+import { SeccionesComponent } from './secciones/secciones.component';
 
 //Path de los componentes
 const appRoutes:Routes=[
@@ -17,6 +17,7 @@ const appRoutes:Routes=[
     { path: 'principal',component:PrincipalComponent},
     { path: 'preguntas',component:PreguntasComponent},
     { path: 'diseno-encuesta',component:DisenoEncuestaComponent},
+    { path: 'secciones',component:SeccionesComponent},
     { path: '**',component:LoginComponent}
 ];
 

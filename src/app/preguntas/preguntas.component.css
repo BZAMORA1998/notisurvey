@@ -29,27 +29,12 @@ h1{
     text-decoration:none;
 }
 
-.ui-accordion .ui-accordion-header{
-    margin: 10px 0 0 0;
+h3{
+    padding-left: 40px !important;
 }
 
-.ui-icon, .ui-widget-content .ui-icon{
-    float: right;
-}
 
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    background: #ea792d !important;
-}
 
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    color: white;
-    background: #b8b8b8;
-}
-.ui-state-hover,.ui-state-hover,.ui-widget-header
-.ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus,
-.ui-button:hover, .ui-button:focus{
-    background: #b8b8b8a1;
-}
 
 
 

@@ -2,3 +2,58 @@
     margin: 0px;
     padding: 0px;
 }
+
+/*step progress angular*/
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+    font-style: none;
+    background: white !important;
+    color: #ea792d !important;
+    border: 2px solid #ea792d !important;
+    width: 30px;
+    height: 30px;
+}
+
+.mat-step-header .mat-step-icon {
+    background-color: #fff;
+    color: grey;
+    border: 2px solid grey;
+    width: 30px;
+    height: 30px;
+}
+
+.mat-vertical-content-container {
+    margin-left: 39px !important;
+    border: 0;
+}
+
+.mat-step-header .cdk-keyboard-focused, .mat-step-header:hover{
+    background-color: white;
+}
+
+.mat-step-header .cdk-keyboard-focused, .mat-step-header.mat-step-header:click{
+    background-color: white;
+}
+
+
+/*Acordeon*/
+.ui-icon{
+    float: right !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #ea792d !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    color: white;
+    background: #b8b8b8;
+}
+.ui-state-hover,.ui-state-hover,.ui-widget-header
+.ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus,
+.ui-button:hover, .ui-button:focus{
+    background: #b8b8b8a1;
+}
+
+.ui-accordion .ui-accordion-header{
+    margin: 10px 0 0 0;
+}
