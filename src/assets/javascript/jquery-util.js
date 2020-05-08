@@ -22,17 +22,8 @@ $(document).ready(function(){
           }
 
           if(window.location.href.indexOf('diseno-encuesta')>-1){
-
-          }
-          
-          if(window.location.href.indexOf('secciones')>-1){
             $("p").click(function(){
               $(this).css({'border':'2px solid #ea792d','color':'#ea792d'});
             });
-
-           /* $('.navmenu ul').after().click(function() {
-              $(this).after().css("background","#ea792d");
-            });*/
           }
 });
-

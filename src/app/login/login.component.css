@@ -96,12 +96,10 @@ form input[type=text]:click{
 
 form input[type=text]:focus{
     box-shadow: 0 0 5px 0 #ea792d;
-    padding-left: 20px;
 }
 
 form input[type=password]:focus{
     box-shadow: 0 0 5px 0 #ea792d;
-    padding-left: 20px;
 }
 
 a{

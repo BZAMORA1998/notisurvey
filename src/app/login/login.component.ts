@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   }
 
   redidirigirPrincipal(){
-    return this._router.navigate(['/principal']);
+    return this._router.navigate(['/diseno-encuesta']);
   }
 
   refresh():void{

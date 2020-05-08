@@ -1,17 +1,35 @@
 <app-principal></app-principal>
 <div class="principal">
-    <mat-vertical-stepper>
-        <mat-step >
-          Content 1
-        </mat-step>
-        <mat-step >
-          Content 2
-        </mat-step>
-        <mat-step >
-            Content 1
-          </mat-step>
-          <mat-step >
-            Content 2
-          </mat-step>
-      </mat-vertical-stepper>
-</div>  
+  <nav class="navmenu">
+      <ul>
+        <form>
+          <li><p class="circle">1</p>
+             <div class="up-image">
+              <input type="file" value="agregar logo"/>
+            </div>
+          </li>
+          <li><p class="circle">2</p>
+            <div class="nombre">
+              <input type="text" placeholder="Ingresar el nombre de la encuesta"/>
+            </div>
+          </li>
+          <li><p class="circle">3</p>
+            <div class="descripcion">
+                <p>Descripcion</p>
+                <textarea></textarea>
+            </div>  
+          </li>
+          <li><p class="circle">4</p> 
+            <div class="side">
+              <div id="left">
+                <p>Fecha de validez</p>
+              </div>
+              <div id="right">
+                <p>Seleccionar la unidad</p>
+              </div>
+            </div>
+          </li>
+        </form>
+      </ul>
+  </nav>
+</div> 
