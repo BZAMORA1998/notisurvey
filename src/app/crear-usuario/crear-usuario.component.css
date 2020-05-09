@@ -111,25 +111,18 @@ form input[type=text]:focus{
     display: none;
 }
 
-
-#form-pregunta7{
-    width:100%;
-    text-align: left;
-    display: none;
-}
-
-#form-pregunta8{
-    width:100%;
-    text-align: left;
-    display: none;
-}
-
-#btn-left{
+.btn-left{
    position: relative;
-   float:left;
+   float:left !important;;
 }
 
-#btn-right{
+.btn-right{
     position: relative;
-    float: right;
+    float: right !important;
+}
+
+form input[type="button"]:disabled{
+    background-color: #f8d6c0;
+    color: #fef9f7;
+    border: none;
 }

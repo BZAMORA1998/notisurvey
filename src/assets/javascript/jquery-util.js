@@ -27,5 +27,89 @@ $(document).ready(function(){
               $(this).append('<style>.navmenu ul:after{background:#ea792d !important;}</style>');
             });
           }
+
+          if(window.location.href.indexOf('crear-usuario')>-1){
+            var efect="drop";
+            var time=1000; 
+            
+            //creacion de usuario
+            $("input[id=pregunta1Siguiente]").click(function () {    
+              $("#form-pregunta1").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta2").toggle(efect);
+              }, time);
+            });
+
+            $("input[id=pregunta2Siguiente]").click(function () {    
+              $("#form-pregunta2").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta3").toggle(efect);
+              }, time);
+            });
+
+            $("input[id=pregunta2Anterior]").click(function () {    
+              $("#form-pregunta2").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta1").toggle(efect);
+              }, time);
+            });
+
+            $("input[id=pregunta3Siguiente]").click(function () {    
+              $("#form-pregunta3").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta4").toggle(efect);
+              }, time);
+            });
+
+            $("input[id=pregunta3Anterior]").click(function () {    
+              $("#form-pregunta3").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta2").toggle(efect);
+              }, time);
+            });
+
+            $("input[id=pregunta4Siguiente]").click(function () {    
+              $("#form-pregunta4").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta5").toggle(efect);
+              }, time);
+            });
+
+            $("input[id=pregunta4Anterior]").click(function () {    
+              $("#form-pregunta4").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta3").toggle(efect);
+              },time);
+            });
+
+            $("input[id=pregunta5Siguiente]").click(function () {    
+              $("#form-pregunta5").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta6").toggle(efect);
+              }, time);
+            });
+
+            $("input[id=pregunta5Anterior]").click(function () {    
+              $("#form-pregunta5").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta4").toggle(efect);
+              },time);
+            });
+
+            $("input[id=pregunta6Siguiente]").click(function () {    
+              $("#form-pregunta6").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta7").toggle(efect);
+              }, time);
+            });
+
+            $("input[id=pregunta6Anterior]").click(function () {    
+              $("#form-pregunta6").toggle(efect);
+              setTimeout(()=>{
+                $("#form-pregunta5").toggle(efect);
+              },time);
+            });
+
+          }
 });
 

@@ -6,7 +6,7 @@
             <label for="">a. ¿Cuál es tu nombre? <span style="color: red;">*</span></label>
                 <p>Lo usaremos en todas las comunicaciones futuras.</p>
                 <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="crearUsuario.nombre" required  placeholder="Escribe aquí tu respuesta..." autofocus/>
-                <div  *ngIf="nombre.value!=''"><input (click)=" pregunta1Siguiente()" type="button" value="Siguiente"/></div>
+                <input type="button" class="btn-right" [disabled]="!nombre.valid" id="pregunta1Siguiente" value="Siguiente"/>
             </form>
             <p class="contador">1 de 6</p>
         </div>
@@ -15,8 +15,8 @@
             <form>
             <label for="">b. ¿Cuál es tu apellido, {{crearUsuario.nombre}}? <span style="color: red;">*</span></label>
                 <input type="text" name="apellido" #apellido="ngModel" [(ngModel)]="crearUsuario.apellido" required placeholder="Escribe aquí tu respuesta..." autofocus/>
-                <div  *ngIf="apellido.value!=''"><input  (click)="pregunta2Siguiente()" id="btn-right" type="button" value="Siguiente"/></div>
-                <input (click)="pregunta2Anterior()" id="btn-left" type="button" value="Anterior"/>
+                <input [disabled]="!apellido.valid" class="btn-right" id="pregunta2Siguiente" type="button" value="Siguiente"/>
+                <input id="pregunta2Anterior"  class="btn-left" type="button" value="Anterior"/>
             </form>
             <p class="contador">2 de 6</p>
         </div>
@@ -25,18 +25,18 @@
             <form>
             <label for="">c. ¿Cuál es tu numero de cédula?</label>
                 <input type="text" name="cedula" #cedula="ngModel" [(ngModel)]="crearUsuario.cedula" placeholder="Escribe aquí tu respuesta..." autofocus/>
-                <input (click)="pregunta3Siguiente()" id="btn-right" type="button" value="Siguiente"/>
-                <input (click)="pregunta3Anterior()" id="btn-left" type="button" value="Anterior"/>
+                <input id="pregunta3Siguiente" class="btn-right" type="button" value="Siguiente"/>
+                <input id="pregunta3Anterior" class="btn-left" type="button" value="Anterior"/>
             </form>
             <p class="contador">3 de 6</p>
         </div>
 
         <div id="form-pregunta4">
             <form>
-            <label for="">d. ¿Cuál es tu email,nombre?</label>
+            <label for="">d. ¿Cuál es tu email?</label>
                 <input type="text" name="correo" #correo="ngModel" [(ngModel)]="crearUsuario.correo" placeholder="Escribe aquí tu respuesta..." autofocus/>
-                <input (click)="pregunta4Siguiente()" id="btn-right" type="button" value="Siguiente"/>
-                <input (click)="pregunta4Anterior()" id="btn-left" type="button" value="Anterior"/>
+                <input id="pregunta4Siguiente" class="btn-right" type="button" value="Siguiente"/>
+                <input id="pregunta4Anterior" class="btn-left" type="button" value="Anterior"/>
             </form>
             <p class="contador">4 de 6</p>
         </div>
@@ -45,17 +45,17 @@
             <form>
                 <label for="">e. Ingrese un nombre de usuario. Ejemplo: BLOPEZ</label>
                 <input type="text" name="nick" #nick="ngModel" [(ngModel)]="crearUsuario.nick" placeholder="Escribe aquí tu respuesta..."/>
-                <input (click)="pregunta5Siguiente()" id="btn-right" type="button" value="Siguiente"/>
-                <input (click)="pregunta5Anterior()" id="btn-left" type="button" value="Anterior"/>
+                <input id="pregunta5Siguiente" class="btn-right" type="button" value="Siguiente"/>
+                <input id="pregunta5Anterior" class="btn-left" type="button" value="Anterior"/>
             </form>
             <p class="contador">5 de 6</p>
         </div>
 
-        <div id="form-pregunta7">
+        <div id="form-pregunta6">
             <form>
                 <label for="">f. Ingrese su contraseña</label>
-                <input id="btn-right" type="button" value="Guardar"/>
-                <input id="btn-left" type="button" value="Cancelar"/>
+                <input class="btn-right" type="button" value="Guardar"/>
+                <input class="btn-left" type="button" value="Cancelar"/>
             </form>
             <p class="contador">6 de 6</p>
         </div>
