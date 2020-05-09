@@ -15,8 +15,9 @@
                 <br><span class="validacion" *ngIf="contrasena.touched && !contrasena.valid">Debe ingresar una contraseña</span>
                 <input type="submit" value="Continuar"/>
             </form>
-            <a (click)="refresh()" [routerLink]="['/olvide-contrasena']">Olvide mi usuario y/o contraseña</a>
-            <a (click)="refresh()" [routerLink]="['/crear-usuario']">Registrate</a>
+            <a (click)="refresh()" [routerLink]="['/crear-usuario']">Regístrate</a>
+            <a (click)="refresh()" style="margin-top: 10px !important;" [routerLink]="['/olvide-contrasena']">Olvide mi usuario y/o contraseña</a>
+            
         </div>
     </div>
     <div class="box-right">

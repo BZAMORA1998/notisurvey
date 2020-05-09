@@ -64,8 +64,9 @@
                     <span id="show-hide-passwd2" action="hide" class="input-group-addon glyphicon glyphicon glyphicon-eye-open"></span>
                 </div>
                 <br><span class="validacion" *ngIf="contrasena2.touched && !contrasena2.valid || !contrasenaigual() ">Las contraseñas deben ser iguales</span>
+                <input id="pregunta6Anterior" class="btn-left" type="button" value="Anterior"/>
                 <input class="btn-right" (click)=" crearusuario()" [disabled]="contrasena2.value=='' || !contrasena2.valid || !contrasenaigual()"type="button" value="Guardar"/>
-                <input class="btn-left" (click)="redirigirLogin()" type="button" value="Cancelar"/>
+                <input class="btn-cancelar" (click)="redirigirLogin()" type="button" value="Cancelar"/>
             </form>
             <p class="contador">6 de 6</p>
         </div>

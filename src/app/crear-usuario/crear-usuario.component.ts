@@ -48,30 +48,44 @@ export class CrearUsuarioComponent implements OnInit {
       title: 'Oops...',
       text: message,
       confirmButtonColor:'#ea792d',
-    })
+    });
   }
 
 
-  mostrarModal(){
+  mostrarModalEspera(){
     var modal=document.getElementById("modelo");
     modal.style.display="block";
   }
 
-  ocultarModal(){
+  ocultarModalEspera(){
     var modal=document.getElementById("modelo");
     modal.style.display="none";
   }
 
+  mostrarModalConfirmacion(message){
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: message,
+      confirmButtonColor:'#ea792d',
+      showConfirmButton: true,
+    }).then((result) => {
+      if (result.value) {
+        this.redirigirLogin();
+      }
+     });
+  }
+
   crearusuario(){
-    this.mostrarModal();
+    this.mostrarModalEspera();
     this._crearUsuarioService.postCrearUsuario(this.crearUsuario).subscribe(
       Response=>{
         console.log(Response);
         if(Response.codigo==200){
-          this.ocultarModal();
-          this.redirigirLogin();
+          this.ocultarModalEspera();
+          this.mostrarModalConfirmacion(Response.mensaje);
         }else{
-          this.ocultarModal();
+          this.ocultarModalEspera();
           this.showModal(Response.mensaje);
         }
       },

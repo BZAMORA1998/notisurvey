@@ -96,7 +96,7 @@ form input[type=password]:focus{
 #form-pregunta1{
     width:100%;
     text-align: left;
-    display: none;
+    display: block;
 }
 
 #form-pregunta2{
@@ -127,17 +127,23 @@ form input[type=password]:focus{
 #form-pregunta6{
     width:100%;
     text-align: left;
-    display: block;
+    display: none;
 }
 
 .btn-left{
    position: relative;
-   float:left !important;;
+   float:left !important;
 }
 
 .btn-right{
     position: relative;
     float: right !important;
+}
+
+.btn-cancelar{
+    margin-right: 6px;
+    position: relative;
+   float: right !important;
 }
 
 form input[type="button"]:disabled{
