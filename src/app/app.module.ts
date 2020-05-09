@@ -13,6 +13,7 @@ import { PreguntasComponent } from './preguntas/preguntas.component';
 import { DisenoEncuestaComponent } from './diseno-encuesta/diseno-encuesta.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SeccionesComponent } from './secciones/secciones.component';
+import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SeccionesComponent } from './secciones/secciones.component';
     PrincipalComponent,
     PreguntasComponent,
     DisenoEncuestaComponent,
-    SeccionesComponent
+    SeccionesComponent,
+    CrearUsuarioComponent
   ],
   imports: [
     BrowserModule,

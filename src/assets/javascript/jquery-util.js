@@ -23,7 +23,9 @@ $(document).ready(function(){
 
           if(window.location.href.indexOf('diseno-encuesta')>-1){
             $("p").click(function(){
-              $(this).css({'border':'2px solid #ea792d','color':'#ea792d'});
+              $(this).css({'border':'1px solid #ea792d','color':'#ea792d'});
+              $(this).append('<style>.navmenu ul:after{background:#ea792d !important;}</style>');
             });
           }
 });
+
