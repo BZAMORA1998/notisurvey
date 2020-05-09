@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router, ActivatedRoute} from '@angular/router';
-import { LoginService } from '../servicios/login.servicio';
+import { LoginService } from '../servicios/login.service';
 import { Usuario } from '../models/usuario';
 import Swal from 'sweetalert2';
 
@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private _route:ActivatedRoute,
     private _router:Router,
-    private _loginService:LoginService,
+    private _loginService:LoginService
   ) { 
     this.usuario=new Usuario("","","","","");
   }

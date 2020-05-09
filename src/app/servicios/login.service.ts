@@ -7,7 +7,7 @@ export class LoginService{
     public url:String;
     
     constructor(private _http:HttpClient){
-        this.url="http://vmi244822.contaboserver.net:8080/notisurvey-war/resources/";
+        this.url="http://vmi244822.contaboserver.net:8080/notisurvey-war/resources/seguridades";
     }
     
     getAutenticacion(nick,password):Observable<any>{
@@ -18,6 +18,6 @@ export class LoginService{
        let headers=new HttpHeaders()
           .set('Content-Type', 'application/x-www-form-urlencoded');
             
-      return this._http.post(this.url+'seguridades/login',body.toString(),{headers:headers});
+      return this._http.post(this.url+'/login',body.toString(),{headers:headers});
     } 
 }

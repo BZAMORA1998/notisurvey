@@ -55,18 +55,26 @@
             <form>
                 <label for="">f. Ingrese su contraseña</label>
                 <div id="password-left">
-                    <input type="password" name="contrasenaleft" />
+                    <input type="password" name="contrasena1" #contrasena1="ngModel" [(ngModel)]="contrasenaleft" />
                     <span id="show-hide-passwd1" action="hide" class="input-group-addon glyphicon glyphicon glyphicon-eye-open"></span>
                 </div>
        
-                 <div id="password-right">
-                    <input type="password"  name="contrasenaright" />
+                <div id="password-right">
+                    <input type="password"  name="contrasena2" #contrasena2="ngModel" [(ngModel)]="contrasenaright"/>
                     <span id="show-hide-passwd2" action="hide" class="input-group-addon glyphicon glyphicon glyphicon-eye-open"></span>
-                 </div>
-                <input class="btn-right" type="button" value="Guardar"/>
-                <input class="btn-left" type="button" value="Cancelar"/>
+                </div>
+                <br><span class="validacion" *ngIf="contrasena2.touched && !contrasena2.valid || !contrasenaigual() ">Las contraseñas deben ser iguales</span>
+                <input class="btn-right" (click)=" crearusuario()" [disabled]="contrasena2.value=='' || !contrasena2.valid || !contrasenaigual()"type="button" value="Guardar"/>
+                <input class="btn-left" (click)="redirigirLogin()" type="button" value="Cancelar"/>
             </form>
             <p class="contador">6 de 6</p>
         </div>
+    </div>
+
+    <div id="modelo">
+        <div id="cuerpo">
+            <div class="spinner-border"></div>
+            <p id="texto">Procesando, espere por favor...</p>
+        </div>  
     </div>
 </div>
