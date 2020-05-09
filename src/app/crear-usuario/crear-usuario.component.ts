@@ -8,8 +8,12 @@ import { CrearUsuario } from '../models/crearUsuario';
 })
 export class CrearUsuarioComponent implements OnInit {
   public crearUsuario:CrearUsuario;
+  public contrasenaright:String;
+  public contrasenaleft:String;
   constructor() { 
     this.crearUsuario=new CrearUsuario("","","","","","");
+    this.contrasenaright="";
+    this.contrasenaleft="";
   }
 
   ngOnInit(): void {

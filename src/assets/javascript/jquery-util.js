@@ -110,6 +110,39 @@ $(document).ready(function(){
               },time);
             });
 
+
+
+            $('#show-hide-passwd1').on('click',function(e){
+              e.preventDefault();
+        
+              var current=$(this).attr('action');
+                      
+              if(current=='hide'){
+                  $(this).prev().attr('type','text');
+                  $(this).removeClass('glyphicon glyphicon-eye-open').addClass('glyphicon glyphicon-eye-close').attr('action','show');
+              }
+      
+              if(current=='show'){
+                   $(this).prev().attr('type','password');
+                   $(this).removeClass('glyphicon glyphicon-eye-close').addClass('glyphicon glyphicon-eye-open').attr('action','hide');
+              }
+            });
+  
+            $('#show-hide-passwd2').on('click',function(e){
+              e.preventDefault();
+        
+              var current=$(this).attr('action');
+                      
+              if(current=='hide'){
+                  $(this).prev().attr('type','text');
+                  $(this).removeClass('glyphicon glyphicon-eye-open').addClass('glyphicon glyphicon-eye-close').attr('action','show');
+              }
+      
+              if(current=='show'){
+                   $(this).prev().attr('type','password');
+                   $(this).removeClass('glyphicon glyphicon-eye-close').addClass('glyphicon glyphicon-eye-open').attr('action','hide');
+              }
+            });
           }
 });
 

@@ -13,7 +13,7 @@
 
         <div id="form-pregunta2">
             <form>
-            <label for="">b. ¿Cuál es tu apellido, {{crearUsuario.nombre}}? <span style="color: red;">*</span></label>
+                <label for="">b. ¿Cuál es tu apellido, {{crearUsuario.nombre}}? <span style="color: red;">*</span></label>
                 <input type="text" name="apellido" #apellido="ngModel" [(ngModel)]="crearUsuario.apellido" required placeholder="Escribe aquí tu respuesta..." autofocus/>
                 <input [disabled]="!apellido.valid" class="btn-right" id="pregunta2Siguiente" type="button" value="Siguiente"/>
                 <input id="pregunta2Anterior"  class="btn-left" type="button" value="Anterior"/>
@@ -54,11 +54,19 @@
         <div id="form-pregunta6">
             <form>
                 <label for="">f. Ingrese su contraseña</label>
+                <div id="password-left">
+                    <input type="password" name="contrasenaleft" />
+                    <span id="show-hide-passwd1" action="hide" class="input-group-addon glyphicon glyphicon glyphicon-eye-open"></span>
+                </div>
+       
+                 <div id="password-right">
+                    <input type="password"  name="contrasenaright" />
+                    <span id="show-hide-passwd2" action="hide" class="input-group-addon glyphicon glyphicon glyphicon-eye-open"></span>
+                 </div>
                 <input class="btn-right" type="button" value="Guardar"/>
                 <input class="btn-left" type="button" value="Cancelar"/>
             </form>
             <p class="contador">6 de 6</p>
         </div>
-
     </div>
 </div>

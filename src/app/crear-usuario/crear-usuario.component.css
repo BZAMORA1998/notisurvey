@@ -74,10 +74,27 @@ form input[type=text]:focus{
     box-shadow: 0 0 5px 0 #EA792D;
 }
 
+form input[type=password]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #EA792D;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    display: block;
+
+}
+
+form input[type=password]:focus{
+    box-shadow: 0 0 5px 0 #ea792d;
+}
+
 #form-pregunta1{
     width:100%;
     text-align: left;
-    display: block;
+    display: none;
 }
 
 #form-pregunta2{
@@ -108,7 +125,7 @@ form input[type=text]:focus{
 #form-pregunta6{
     width:100%;
     text-align: left;
-    display: none;
+    display: block;
 }
 
 .btn-left{
@@ -125,4 +142,41 @@ form input[type="button"]:disabled{
     background-color: #f8d6c0;
     color: #fef9f7;
     border: none;
+}
+
+#show-hide-passwd1{
+    position: absolute;
+    margin-top: 322px;
+    margin-left: 215px;
+    border: none;
+    background-color: transparent;
+}
+
+#show-hide-passwd2{
+    position: absolute;
+    margin-top: 322px;
+    margin-left: 215px;;
+    border: none;
+    background-color: transparent;
+}
+
+#password-left{
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+}
+
+#password-right{
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+}
+
+.validacion{
+    position: absolute;
+    color: red;
+    font-size: small;
+    width: 14%;
+    margin-left: 130px;
+    text-align: right;
 }
