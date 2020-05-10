@@ -68,7 +68,7 @@ form input[type=text]:click{
     box-shadow: 0 0 5px 0 #EA792D;
 }
 
-form input[type="button"]:hover{
+form input[type=button]:hover{
     box-shadow: 0 0 5px 0 #EA792D;
 }
 

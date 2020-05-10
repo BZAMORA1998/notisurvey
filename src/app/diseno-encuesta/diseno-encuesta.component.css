@@ -1,10 +1,17 @@
 .principal{
     margin:0;
     padding:0; 
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px;
 }
 
 ul{
     list-style: none;
+}
+
+.circle .up-image{
+    padding: 0px;
+    width: 150px;
 }
 
 .navmenu{
@@ -56,7 +63,6 @@ ul{
     margin-left: 60px;
     width: 100%;
     height: 50px;
-    padding: 15px;
     background: #fcfcfc;
     border: 1px solid #e7e7e7;
     border-radius: 4px;
@@ -64,7 +70,32 @@ ul{
 
 .up-image input[type=file]{
     list-style-type: none;
-    color: red;
+}
+
+.up-image p{
+    width: 150px;
+    height: 100%;
+    padding-left: 25px;
+    padding-top: 12px;
+    text-align: left;
+    color: #bebebe;
+    background-color: #fcfcfc;
+    background-image: url("../../assets/img/ico-file.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.up-image #btn_enviar{
+    position: absolute;
+    margin: 0px;
+    background-color: #fcfcfc;
+    top: 25px;
+    margin-left: 15px;
+    opacity: 0;
+}
+
+::placeholder { 
+    color: #bebebe; 
 }
 
 .nombre{
@@ -177,4 +208,63 @@ ul{
     float: left;
     width: 50%;
     height: 100%;
+}
+
+#left input[type=text]{
+    width: 92%;
+    height: 15%;
+    background: #fcfcfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding-left: 75px;
+    background-image: url("../../assets/img/ico-calendar.png");
+    background-repeat: no-repeat;
+    background-position-x: 450px;
+}
+
+#left #txt-fecha-inicio{
+    position: absolute;
+    margin-top: -45px;
+    color:#bebebe;
+}
+
+#left #txt-fecha-fin{
+    position: absolute;
+    margin-top: -45px;
+    color:#bebebe;
+}
+
+#right input[type=radio]{
+    display: none;
+}
+
+#right input[type=radio]:checked + label{
+    border:1px solid #ea792d;
+}
+
+#right label{
+    font-weight:normal;
+    background: #fcfcfc;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    width: 47%;
+    height: 37%;
+    padding-top: 60px;
+    padding-left: 100px;
+    margin-left: 31px;
+    color: #c3c3c3;
+}
+
+#right #lbl-negocio{
+    background-image: url("../../assets/img/ico-negocio.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0px !important;
+}
+
+#right #lbl-estracto{
+    background-image: url("../../assets/img/ico-estracto.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }

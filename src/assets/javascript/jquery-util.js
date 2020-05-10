@@ -22,6 +22,11 @@ $(document).ready(function(){
           }
 
           if(window.location.href.indexOf('diseno-encuesta')>-1){
+            
+            //datepicker
+            $("#fecha-inicio").datepicker();
+            $("#fecha-fin").datepicker();
+
             $("p").click(function(){
               $(this).css({'border':'1px solid #ea792d','color':'#ea792d'});
               $(this).append('<style>.navmenu ul:after{background:#ea792d !important;}</style>');

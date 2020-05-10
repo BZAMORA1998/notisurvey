@@ -5,7 +5,8 @@
         <form>
           <li><p class="circle">1</p>
              <div class="up-image">
-              <input type="file" value="agregar logo"/>
+                <p>Agregar logo</p>
+                <input type="file" id="btn_enviar" value="agregar logo"/>
             </div>
           </li>
           <li><p class="circle">2</p>
@@ -15,18 +16,23 @@
           </li>
           <li><p class="circle">3</p>
             <div class="descripcion">
-                <p>Descripcion</p>
-                <textarea></textarea>
+                <p>Descripción</p>
+                <textarea placeholder="Ingresar máximo 100 caracteres"></textarea>
             </div>  
           </li>
           <li><p class="circle">4</p> 
             <div class="side">
               <div id="left">
                 <p>Fecha de validez</p>
-                
+                <input type="text" id="fecha-inicio"/>
+                 <p id="txt-fecha-inicio">Inicio:</p>
+                <input type="text" id="fecha-fin"/>
+                <p id="txt-fecha-fin">Fin:</p>
               </div>
               <div id="right">
                 <p>Seleccionar la unidad</p>
+                <input id="rd-negocio" name="unidad" type="radio"/><label for="rd-negocio" id="lbl-negocio">Negocio</label>
+                <input id="rd-estracto" name="unidad" type="radio"/><label for="rd-estracto" id="lbl-estracto">Estracto</label>
               </div>
             </div>
           </li>
