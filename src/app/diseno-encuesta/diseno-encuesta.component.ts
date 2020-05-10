@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./diseno-encuesta.component.css']
 })
 export class DisenoEncuestaComponent implements OnInit {
-
-  constructor() { }
+ 
+  constructor() {
+    
+   }
 
   ngOnInit(): void {
-  }
 
+  }
+    
 }
+

@@ -72,7 +72,7 @@ ul{
     list-style-type: none;
 }
 
-.up-image p{
+.up-image #txt-enviarfile{
     width: 150px;
     height: 100%;
     padding-left: 25px;
@@ -83,15 +83,42 @@ ul{
     background-image: url("../../assets/img/ico-file.png");
     background-repeat: no-repeat;
     background-position: right;
+    display: block;
 }
 
-.up-image #btn_enviar{
+.up-image #btn_enviarfile{
     position: absolute;
     margin: 0px;
     background-color: #fcfcfc;
     top: 25px;
     margin-left: 15px;
     opacity: 0;
+    display: block;
+}
+
+.up-image #btn_eliminarfile{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 1030px;
+    border: none;
+    background: #fcfcfc;
+    color: #ee9052;
+    display: none;
+}
+
+.up-image #img_logo{
+    position:absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+    display: none;
+}
+
+.up-image #txt_value{
+    position:absolute;
+    margin-top: 12px;
+    margin-left: 90px;
+    text-align: left;
+    display: none;
 }
 
 ::placeholder { 

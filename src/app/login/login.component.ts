@@ -67,6 +67,7 @@ export class LoginComponent implements OnInit {
           localStorage.setItem("usuario",JSON.stringify(this.usuario));
           console.log(this.usuario);
           this.ocultarModal();
+          this.refresh();
           this.redidirigirPrincipal()
         }else{
           console.log(Response.respuestaProceso);
