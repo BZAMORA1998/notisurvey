@@ -39,10 +39,11 @@
     background-color: #ffffff;
  }
 
- #descripcion p{
+ #descripcion input[type=text]{
     position: absolute;
     margin: 15px 8%;
     font-size: 25px;
+    width: 100%;
     color: #393e41 !important;
     border: none !important;
 }

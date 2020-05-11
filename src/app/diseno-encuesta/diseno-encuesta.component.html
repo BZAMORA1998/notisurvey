@@ -1,4 +1,4 @@
-<app-principal></app-principal>
+<app-principal [nombrePadre]="nombre"></app-principal>
 <div class="principal">
   <nav class="navmenu">
       <ul>
@@ -14,7 +14,7 @@
           </li>
           <li><p class="circle">2</p>
             <div class="nombre">
-              <input type="text" placeholder="Ingresar el nombre de la encuesta"/>
+              <input type="text"  name="nombreEncuenta" #nombreEcuenta="ngModel" [(ngModel)]="nombre" placeholder="Ingresar el nombre de la encuesta"/>
             </div>
           </li>
           <li><p class="circle">3</p>
@@ -36,7 +36,9 @@
                 <p>Seleccionar la unidad</p>
                 <input id="rd-negocio" name="unidad" type="radio"/><label for="rd-negocio" id="lbl-negocio">Negocio</label>
                 <input id="rd-estracto" name="unidad" type="radio"/><label for="rd-estracto" id="lbl-estracto">Estracto</label>
+                <input type="submit" value="continuar"/>
               </div>
+              
             </div>
           </li>
         </form>
